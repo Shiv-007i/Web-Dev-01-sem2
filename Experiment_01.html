@@ -2,13 +2,63 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script>
-        
-    </script>
+    <title>Feedback Form</title>
+
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;  /* horizontal center */
+            align-items: center;      /* vertical center */
+            font-family: Arial, sans-serif;
+        }
+
+        form {
+            border: 1px solid black;
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 5px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+        }
+
+        button {
+            padding: 8px 15px;
+        }
+    </style>
 </head>
 <body>
-    
+
+    <form>
+        <h2>Online Feedback Form</h2>
+
+        <label>Name:</label>
+        <input type="text" required>
+
+        <label>Email:</label>
+        <input type="email" required>
+
+        <label>Rating:</label>
+        <select required>
+            <option value="">Select Rating</option>
+            <option>1 - Poor</option>
+            <option>2 - Average</option>
+            <option>3 - Good</option>
+            <option>4 - Very Good</option>
+            <option>5 - Excellent</option>
+        </select>
+
+        <label>Your Feedback:</label>
+        <textarea rows="4" required></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+
 </body>
 </html>
