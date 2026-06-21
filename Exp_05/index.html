@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employee Records</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <h2>Employee Management</h2>
+    <h3>Add Employee</h3>
+    <input id="name" placeholder="Name">
+    <input id="salary" type="number" placeholder="Salary">
+    <input id="dept" placeholder="Department">
+    <button onclick="addEmployee()">Add</button>
+    <h3>Actions</h3>
+    <button onclick="displayAll()">Display All</button>
+    <button onclick="filterHighSalary()">Salary > 50000</button>
+    <button onclick="showStats()">Total & Avg Salary</button>
+    <button onclick="countDept()">Count by Dept</button>
+    <div id="output"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
